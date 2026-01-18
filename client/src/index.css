@@ -26,3 +26,15 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.loading {
+  font-size: 20px;
+  color: #667eea;
+}
