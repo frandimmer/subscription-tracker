@@ -6,6 +6,7 @@ import PublicRoute from './components/PublicRoute';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
+import CreateSubscription from './pages/CreateSubscription';
 
 function App() {
   return (
@@ -36,6 +37,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <Dashboard />
+              </ProtectedRoute>
+            } 
+          />
+          <Route 
+            path="/crear-subscripcion" 
+            element={
+              <ProtectedRoute>
+                <CreateSubscription />
               </ProtectedRoute>
             } 
           />
