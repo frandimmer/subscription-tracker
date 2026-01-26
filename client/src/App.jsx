@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import CreateSubscription from './pages/CreateSubscription';
+import EditSubscription from './pages/EditSubscription';
 
 function App() {
   return (
@@ -45,6 +46,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <CreateSubscription />
+              </ProtectedRoute>
+            } 
+          />
+          <Route 
+            path="/editar-subscripcion/:id" 
+            element={
+              <ProtectedRoute>
+                <EditSubscription />
               </ProtectedRoute>
             } 
           />
